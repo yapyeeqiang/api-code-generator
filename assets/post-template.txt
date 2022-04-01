@@ -1,0 +1,5 @@
+export const <%= action %> = async (payload) => {
+    const { data } = await client.post('<%= path %>', payload)
+
+    return data
+}

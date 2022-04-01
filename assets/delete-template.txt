@@ -1,0 +1,5 @@
+export const <%= action %> = async (id) => {
+    const { data } = await client.delete(`<%= path %>`)
+
+    return data
+}

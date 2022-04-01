@@ -1,0 +1,5 @@
+export const <%= action %> = async (id, payload) => {
+    const { data } = await client.patch(`<%= path %>`, payload)
+
+    return data
+}

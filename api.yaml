@@ -1,0 +1,14 @@
+name: Todo API
+base_url: https://jsonplaceholder.typicode.com
+
+endpoints:
+    - album:
+          GET /albums:
+              summary: 'Get all albums'
+              data:
+                  type: Array
+
+          DELETE /albums/{id}:
+              summary: 'Delete album by id'
+              data:
+                  type: Object
