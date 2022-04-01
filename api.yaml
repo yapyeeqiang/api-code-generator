@@ -1,14 +1,29 @@
-name: Todo API
+name: JSON Placeholder API
 base_url: https://jsonplaceholder.typicode.com
 
 endpoints:
-    - album:
-          GET /albums:
-              summary: 'Get all albums'
+    - todo:
+          GET /todos:
+              summary: 'Get all todos'
               data:
                   type: Array
 
-          DELETE /albums/{id}:
-              summary: 'Delete album by id'
+          GET /todos/{id}:
+              summary: 'Get todo by id'
+              data:
+                  type: Object
+
+          POST /todos:
+              summary: 'Add todo'
+              data:
+                  type: Object
+
+          PATCH /todos/{id}:
+              summary: 'Update todo by id'
+              data:
+                  type: Object
+
+          DELETE /todos/{id}:
+              summary: 'Delete todo by id'
               data:
                   type: Object
