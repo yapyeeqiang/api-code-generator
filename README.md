@@ -28,6 +28,7 @@ endpoints:
 2. Run the script
 
 ```sh
+npm install
 npm run build
 ```
 
